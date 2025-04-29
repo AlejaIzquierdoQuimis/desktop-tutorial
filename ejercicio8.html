@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navegacion Responsiva</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Barra de navegacion */
+        .navbar {
+            background-color: #f591dc;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* Permitir que los elementos se acomoden en varias lineas */
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 18px;
+        }
+
+        .navbar a:active {
+            color: #f7f3df;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            color: #ffd700;
+        }
+
+        /* Estilo de las secciones */
+        section {
+            padding: 50px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        /* Media Queries para dispositivos moviles */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column; /* Hacer que los enlaces se apilen verticalmente */
+                align-items: center; /* Centrar los enlaces */
+            }
+
+            .navbar a {
+                font-size: 16px; /* Reducir el tamano de los enlaces */
+            }
+
+            section {
+                padding: 20px;
+                margin: 10px;
+            }
+        }
+
+        /* Media Queries para pantallas pequenas (telefonos) */
+        @media screen and (max-width: 480px) {
+            .navbar a {
+                font-size: 14px; /* Reducir aun mas el tamano de los enlaces */
+                padding: 8px 10px; /* Ajustar el espaciado */
+            }
+
+            section {
+                padding: 15px;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar">
+        <a href="#biografia">Biografia</a>
+        <a href="#hobbies">Pasatiempos</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </nav>
+
+    <!-- Secciones internas -->
+    <section id="biografia">
+        <h2>Biografia</h2>
+        <p>Hola, soy Alejandra. Vivo en Guayaquil y me apasiona el desarrollo web y la tecnologia.</p>
+    </section>
+
+    <section id="hobbies">
+        <h2>Pasatiempos</h2>
+        <ul>
+            <li>Leer</li>
+            <li>Viajar</li>
+            <li>Bailar</li>
+        </ul>
+    </section>
+</body>
+</html>
